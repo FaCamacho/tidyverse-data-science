@@ -245,8 +245,30 @@ ggplot(data = mpg) +
       geom_point(mapping = aes(fill=drv),shape=23,color="white",stroke=3)
     
     
+#Asignament 5
     
+    getwd()
     
+    #i
+    #¿Qué hace el parámetro geom_col? ¿En qué se diferencia de geom_bar?
     
+    #ii
+    #La gran mayoría de geometrías y de stats vienen por parejas que siempre se utilizan en conjunto.
+    #Por ejemplo geom_bar con stats_count. Haz una pasada por la documentación y la chuleta de ggplot y
+    #establece una relación entre esas parejas de funciones. ¿Qué tienen todas en común?
     
+    #iii
+    #Qué variables calcula la función stat_smooth? ¿Qué parámetros controlan su comportamiento?
     
+    #iv
+    #Cuando hemos pintado nuestro diagrama de barras con sus proporciones, necesitamos configurar el parámetro group = 1.
+    #¿Por qué?
+    
+    #vi
+    #¿Qué problema tienen los dos siguientes gráficos?
+    
+    ggplot(data = diamonds) + 
+      geom_bar(mapping = aes(x = cut, y = ..prop..))
+    
+    ggplot(data = diamonds) + 
+      geom_bar(mapping = aes(x = cut, fill = color, y = ..prop..))
